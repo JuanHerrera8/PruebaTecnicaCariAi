@@ -27,14 +27,16 @@ export default function Home() {
                 {selectedChat ? (
                     <ChatWindow chatId={selectedChat} onBackToList={handleBackToList} />
                 ) : (
-                    <div className="h-full flex items-center justify-center bg-gray-100">
-                        <p className="text-gray-500">Selecciona un chat</p>
+                    <div className="h-full w-full flex items-center justify-center bg-gray-100">
+                        <p className="text-gray-500 text-lg">Selecciona un chat para comenzar</p>
                     </div>
                 )}
             </div>
         </div>
     )
 }
+
+
 
 
 
